@@ -1,8 +1,15 @@
-import {requestMain} from '../api'
-import {REQUESTMAIN} from './mutition-type'
+import {requestMain, requestMainOther} from '../api'
+import {REQUESTMAIN, REQUESTMAINOTHER} from './mutition-type'
 export default {
-  async requestMain({commit}){
+  async requestMain({commit}, cd){
     const main = await requestMain()
     commit(REQUESTMAIN, {main})
-  }
+    cd && cd()
+  },
+
+  async requestMainOther({commit}, cd){
+    const mainOther = await requestMainOther()
+    commit(REQUESTMAINOTHER, {mainOther})
+    cd && cd()
+  },
 }

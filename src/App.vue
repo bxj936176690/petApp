@@ -16,14 +16,9 @@
           <router-link to="/dailyThings">日用外出</router-link>
           <router-link to="/beauty">美容香波</router-link>
         </div>
-
       </div>
-      <div class="mainContent">
         <router-view></router-view>
-      </div>
-      <div class="foot">
         <footMenu />
-      </div>
     </div>
 </template> <!--html-->
 
@@ -67,11 +62,4 @@
         font-size 14px
         width 20%
         height 36px
-  .foot
-    position absolute
-    bottom 0
-    left 0
-    height 50px
-    width 100%
-    border-top 1px solid #e7e7e7
 </style><!--css-->

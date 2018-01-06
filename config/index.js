@@ -18,6 +18,13 @@ module.exports = {
           '^/api': '/'
         }
       },
+      '/test': {
+        target: 'https://mall.api.epet.com/v3/index/main.html?do=GetDynamicV315&pet_type=dog&version=358&system=wap&isWeb=1&_=1515116838459',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/test': '/'
+        }
+      },
     },
 
     // Various Dev Server settings

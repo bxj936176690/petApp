@@ -37,7 +37,13 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   .foot-menu
+    border-top 1px solid #e7e7e7
     display flex
+    position fixed
+    bottom 0
+    z-index 10
+    height 50px
+    background: white
     .menu-item
       text-align center
       width 25%
@@ -47,4 +53,5 @@
       span
         display block
         font-size 12px
+
 </style><!--css-->
